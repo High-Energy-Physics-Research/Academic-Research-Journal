@@ -13239,11 +13239,134 @@ div#notebook {
 <main>
 <div class="border-box-sizing" id="notebook" tabindex="-1">
 <div class="container" id="notebook-container">
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=6eacf08d"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=b682d5cb"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&amp;display=swap" rel="stylesheet"/>
+<div style="
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #2c2c2c;
+">
+</div>
+<h2 id="Origem-cinem%C3%A1tica-da-expans%C3%A3o-em-harm%C3%B4nicos-$-v_n-$">Origem cinemática da expansão em harmônicos $ v_n $<a class="anchor-link" href="#Origem-cinem%C3%A1tica-da-expans%C3%A3o-em-harm%C3%B4nicos-$-v_n-$">¶</a></h2><p><strong>Analisando apenas a cinemática</strong>, após o <em>freeze-out</em> temos um <strong>conjunto de partículas detectadas</strong>. Nesse estágio, o sistema já não evolui dinamicamente: não há forças, nem equações de movimento, apenas um estado final congelado acessível experimentalmente.</p>
+<p>Fixando o momento transversal $ p_T $, podemos medir a distribuição angular</p>
+<p>$$
+\frac{dN}{d\phi}(p_T),
+$$</p>
+<p>que representa o <strong>número de partículas com momento transversal $ p_T $</strong> emitidas na <strong>direção azimutal $ \phi $</strong>.</p>
+<p>A variável $ \phi $ é um ângulo, portanto satisfaz a identificação geométrica</p>
+<p>$$
+\phi \equiv \phi + 2\pi.
+$$</p>
+<p>Segue que a função $ \frac{dN}{d\phi}(p_T) $ é uma <strong>função periódica de período $ 2\pi $</strong>.</p>
+<hr/>
+<h3 id="Expans%C3%A3o-em-s%C3%A9rie-de-Fourier">Expansão em série de Fourier<a class="anchor-link" href="#Expans%C3%A3o-em-s%C3%A9rie-de-Fourier">¶</a></h3><p>Toda função periódica definida em um círculo pode ser expandida em <strong>série de Fourier</strong>. Assim, <strong>necessariamente existe</strong> uma expansão do tipo</p>
+<p>$$
+\frac{dN}{d\phi}(p_T)
+=
+a_0(p_T)
++
+\sum_{n=1}^{\infty}
+\left[
+a_n(p_T)\cos(n\phi)
++
+b_n(p_T)\sin(n\phi)
+\right].
+$$</p>
+<p>Essa expansão é um <strong>resultado puramente matemático</strong>, decorrente apenas da periodicidade da variável angular $ \phi $.</p>
+<hr/>
+<h3 id="Escolha-de-um-%C3%A2ngulo-de-refer%C3%AAncia">Escolha de um ângulo de referência<a class="anchor-link" href="#Escolha-de-um-%C3%A2ngulo-de-refer%C3%AAncia">¶</a></h3><p>Em cada evento, escolhe-se um <strong>ângulo de referência</strong> $ \Psi_n $, correspondente a uma <strong>rotação global no plano transversal</strong>. Essa escolha é cinemática e não altera a distribuição física, apenas redefine o eixo angular.</p>
+<p>Com essa rotação, o par de coeficientes trigonométricos pode ser reescrito como</p>
+<p>$$
+a_n(p_T)\cos(n\phi) + b_n(p_T)\sin(n\phi)
+=
+A_n(p_T)\cos\big(n(\phi - \Psi_n)\big),
+$$</p>
+<p>onde $ A_n(p_T) $ e $ \Psi_n $ são <strong>apenas reparametrizações trigonométricas</strong>, sem novo conteúdo físico.</p>
+<hr/>
+<h3 id="Normaliza%C3%A7%C3%A3o-da-distribui%C3%A7%C3%A3o">Normalização da distribuição<a class="anchor-link" href="#Normaliza%C3%A7%C3%A3o-da-distribui%C3%A7%C3%A3o">¶</a></h3><p>Define-se o número total de partículas naquele momento transversal $ p_T $ como</p>
+<p>$$
+N(p_T)
+=
+\int_0^{2\pi}
+d\phi\,
+\frac{dN}{d\phi}(p_T).
+$$</p>
+<p>O termo médio da série de Fourier é então dado por</p>
+<p>$$
+a_0(p_T)
+=
+\frac{N(p_T)}{2\pi}.
+$$</p>
+<p>Essa definição garante que a distribuição angular esteja <strong>corretamente normalizada</strong>.</p>
+<hr/>
+<h3 id="Defini%C3%A7%C3%A3o-dos-coeficientes-$-v_n-$">Definição dos coeficientes $ v_n $<a class="anchor-link" href="#Defini%C3%A7%C3%A3o-dos-coeficientes-$-v_n-$">¶</a></h3><p>Por convenção, definem-se os coeficientes harmônicos como</p>
+<p>$$
+v_n(p_T)
+\equiv
+\left\langle
+\cos\big(n(\phi - \Psi_n)\big)
+\right\rangle,
+$$</p>
+<p>ou, de forma explícita,</p>
+<p>$$
+v_n(p_T)
+=
+\frac{
+\int_0^{2\pi}
+d\phi\,
+\cos\big(n(\phi - \Psi_n)\big)\,
+\frac{dN}{d\phi}(p_T)
+}{
+\int_0^{2\pi}
+d\phi\,
+\frac{dN}{d\phi}(p_T)
+}.
+$$</p>
+<p>Esses coeficientes correspondem a <strong>projeções da distribuição angular</strong> sobre a base harmônica natural do círculo.</p>
+<hr/>
+<h3 id="Forma-final-da-expans%C3%A3o">Forma final da expansão<a class="anchor-link" href="#Forma-final-da-expans%C3%A3o">¶</a></h3><p>Substituindo todas as definições anteriores, obtém-se a forma final da expansão:</p>
+<p>$$
+\frac{dN}{d\phi}(p_T)
+=
+\frac{N(p_T)}{2\pi}
+\left[
+1
++
+2
+\sum_{n=1}^{\infty}
+v_n(p_T)
+\cos\big(n(\phi - \Psi_n)\big)
+\right].
+$$</p>
+<p>Essa expressão é <strong>cinemática, estatística e geométrica</strong>, não envolvendo qualquer equação de movimento.</p>
+<hr/>
+<h3 id="O-modo-isotr%C3%B3pico-$-v_0-$">O modo isotrópico $ v_0 $<a class="anchor-link" href="#O-modo-isotr%C3%B3pico-$-v_0-$">¶</a></h3><p>Podemos, então, identificar o <strong>modo harmônico de ordem zero</strong> como o termo médio da expansão. O coeficiente correspondente é</p>
+<p>$$
+v_0(p_T)
+\equiv
+\frac{1}{2\pi}
+\int_0^{2\pi}
+d\phi\,
+\frac{dN}{d\phi}(p_T)
+=
+\frac{N(p_T)}{2\pi}.
+$$</p>
+<p>O termo $ v_0(p_T) $ representa a <strong>contribuição isotrópica média</strong> da distribuição angular, servindo como <strong>normalização</strong> sobre a qual os coeficientes $ v_n(p_T) $, com $ n \ge 1 $, quantificam as anisotropias do estado final.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=f729c1a4"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <link href="https://fonts.googleapis.com/..." rel="stylesheet"/>
-<div style="font-family: 'Reenie Beanie', cursive;
+<div style="
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #2c2c2c;
 ">
 </div>
 <p>Sobre $ \mathscr{v_0(p_T)} $.</p>
@@ -13271,9 +13394,45 @@ Assim, $v_0(p_T)$ não codifica anisotropia, mas estabelece a normalização fí
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=6c1c6d12"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=e85eb009"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&amp;display=swap" rel="stylesheet"/>
+<div style="
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #2c2c2c;
+">
+Em fluidos relativísticos, a hidrodinâmica descreve o comportamento coletivo de sistemas
+fortemente interagentes a partir de quantidades macroscópicas como densidade de energia,
+pressão e velocidade do fluido. A conservação local dessas quantidades reflete,
+de maneira efetiva, a física microscópica do sistema.
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered celltag_hide-input" id="cell-id=0a34dbdd">
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[6]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><style>@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+
+/* Markdown renderizado */
+.rendered_html {
+    font-family: 'Reenie Beanie', cursive !important;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #2c2c2c;
+}
+
+/* Parágrafos e listas */
+.rendered_html p,
+.rendered_html li {
+    font-family: 'Reenie Beanie', cursive !important;
+}</style></div>
+</div>
 </div>
 </div>
 </div>
