@@ -13247,15 +13247,42 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered" id="cell-id=da31be8d">
 <div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
 
+
 <span class="n">css</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../../assets/css/notebook-theme.css"</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
 <span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">"&lt;style&gt;</span><span class="si">{</span><span class="n">css</span><span class="si">}</span><span class="s2">&lt;/style&gt;"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[1]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><style>@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+:root{
+  --nb-font: "Sevillana", cursive;
+}
+
+/* Markdown renderizado */
+.rendered_html {
+  font-family: 'Sevillana', cursive !important;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+/* Parágrafos e listas */
+.rendered_html p,
+.rendered_html li {
+  font-family: 'Sevillana', cursive !important;
+}</style></div>
 </div>
 </div>
 </div>
@@ -13425,7 +13452,7 @@ e pressão.
 <div class="text_cell_render border-box-sizing rendered_html">
 <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&amp;display=swap" rel="stylesheet"/>
 <div style="
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Reenie Beanie', cursive !important;
   font-size: 22px;
   line-height: 1.6;
   color: #2c2c2c;
@@ -13443,7 +13470,7 @@ de maneira efetiva, a física microscópica do sistema.
 <div class="text_cell_render border-box-sizing rendered_html">
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&amp;display=swap" rel="stylesheet"/>
 <div style="
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', cursive !important;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2c2c;
@@ -13455,7 +13482,7 @@ que pode ser escrita como</p>
 \partial_\mu T^{\mu\nu} = 0.
 $$</p>
 <div style="
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', cursive !important;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2c2c;
@@ -13466,7 +13493,7 @@ $$</p>
 T^{\mu\nu} = (\varepsilon + p) u^\mu u^\nu - p\, g^{\mu\nu}.
 $$</p>
 <div style="
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', cursive !important;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2c2c;
@@ -13480,7 +13507,7 @@ u_\nu \partial_\mu T^{\mu\nu}
 + (\varepsilon + p)\, \partial_\mu u^\mu = 0.
 $$</p>
 <div style="
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', cursive !important;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2c2c;
@@ -13494,7 +13521,7 @@ do fluido, codificada no divergente do campo de velocidades.</p>
 = -(\varepsilon + p)\, \nabla_\mu u^\mu.
 $$</p>
 <div style="
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', cursive !important;
   font-size: 20px;
   line-height: 1.6;
   color: #2c2c2c;
