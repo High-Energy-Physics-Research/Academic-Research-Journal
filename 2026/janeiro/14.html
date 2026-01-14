@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>13</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>14</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -13239,103 +13239,43 @@ div#notebook {
 <main>
 <div class="border-box-sizing" id="notebook" tabindex="-1">
 <div class="container" id="notebook-container">
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=fb282f06"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=32cb1b06"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Leituras">Leituras<a class="anchor-link" href="#Leituras">¶</a></h1>
+<h2 id="Eventos">Eventos<a class="anchor-link" href="#Eventos">¶</a></h2>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=b5f0e69e"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=87a2b479"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tese">Tese<a class="anchor-link" href="#Tese">¶</a></h3><ul>
-<li><a href="https://www.teses.usp.br/teses/disponiveis/43/43134/tde-14102021-113026/publico/Dissertacao_Rodrigo.pdf">Desenvolvendo  um novo Modelo de Monte Carlo para colisões de íons pesados</a></li>
+<ul>
+<li><a href="https://indico.cern.ch/event/1428985/">13th International Conference on Hard and Electromagnetic Probes of High-Energy Nuclear Collisions</a></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=e7eee349"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Artigos">Artigos<a class="anchor-link" href="#Artigos">¶</a></h3><ul>
-<li><a href="https://arxiv.org/pdf/1801.03477">Small System Collectivity in Relativistic Hadronic and Nuclear Collisions</a>  : QGP -&gt; Fluido perfeito</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=14513cfd"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=7cf960a8"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Conceitos">Conceitos<a class="anchor-link" href="#Conceitos">¶</a></h2><ol>
-<li><a href="#gas-ideal">Modelo do gás</a></li>
-<li><a href="#fluido-ideal">Modelo de Fluidos: Euler e Navier–Stokes</a></li>
-<li><a href="#o-teorema-de-liouville">Liouville e conservação da informação</a></li>
-<li><a href="#5-boltzmann-bbgky-e-irreversibilidade">Boltzmann, BBGKY e irreversibilidade</a></li>
-<li><a href="#7-fechamento-qgp-como-fluido-quase-perfeito">Modelo QGP: fluido perfeito (Hidrodinâmica relativística)</a></li>
-<li><a href="#7-fechamento-qgp-como-fluido-quase-perfeito">Correlações universais observadas entre beams no freeze-out indicam uma fase hidrodinâmica</a></li>
+<li><a href="#hadrons-de-alto-momento">Hadrons de alto momento</a></li>
+<li><a href="#regime-perturbativo">Regime perturbativo</a></li>
+<li><a href="#regime-nao-perturbativo">Regime não perturbativo</a></li>
 </ol>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=6f7f0130"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=3127e1d3"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Gas-ideal">Gas ideal<a class="anchor-link" href="#Gas-ideal">¶</a></h3><link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
-<div style="
-  font-family: 'Sevillana', cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #2c2c2c;
-">
+<div class="font-sevillana">
 </div>
-<p>Um <strong>gás ideal</strong> é um modelo termodinâmico em que as partículas são tratadas como pontuais, com <strong>interações intermoleculares desprezíveis</strong> (exceto colisões elásticas), de modo que o estado macroscópico do sistema pode ser descrito por uma <strong>equação de estado</strong> simples. A forma mais comum é a <strong>lei dos gases ideais</strong>, que relaciona pressão, volume e temperatura por</p>
-<p>$$
-pV = nRT \quad (\text{ou } \; pV = Nk_B T),
-$$</p>
-<p>onde $p$ é a pressão, $V$ o volume, $T$ a temperatura absoluta, $n$ o número de mols, $R$ a constante universal dos gases (e $N,k_B$ a forma microscópica).  <a href="https://en.wikipedia.org/wiki/Ideal_gas_law?utm_source">Wikipedia</a></p>
-<hr/>
-<h3 id="Se-n%C3%A3o-%C3%A9-g%C3%A1s-ideal,-vamos-para-qual-modelo?-%E2%80%94-o-an%C3%A1logo-a-Euler-%E2%86%92-Navier%E2%80%93Stokes">Se não é gás ideal, vamos para qual modelo? — o análogo a <em>Euler → Navier–Stokes</em><a class="anchor-link" href="#Se-n%C3%A3o-%C3%A9-g%C3%A1s-ideal,-vamos-para-qual-modelo?-%E2%80%94-o-an%C3%A1logo-a-Euler-%E2%86%92-Navier%E2%80%93Stokes">¶</a></h3><p>No mesmo espírito em que as <strong>equações de Euler</strong> são o limite <strong>inviscido</strong> das <strong>equações de Navier–Stokes</strong>, o passo além do <strong>gás ideal</strong> é abandonar a hipótese de partículas não-interagentes e passar para <strong>modelos de gás real</strong>. O primeiro nível dessa transição ocorre ainda no plano <strong>termodinâmico</strong>, via <strong>equações de estado corrigidas</strong>, como a <strong>equação de Van der Waals</strong>,
-$$
-\left(
-p
-\;+\;
-\textcolor{#f1c40f}{a\frac{n^2}{V^2}}
-\right)
-\left(
-V
-\;-\;
-\textcolor{#f1c40f}{nb}
-\right)
-=
-nRT
-$$
-que incorpora <strong>interações atrativas</strong> ($a$) e <strong>volume finito das partículas</strong> ($b$). Assim como Navier–Stokes adiciona dissipação ao balanço de momento, essas correções adicionam <strong>estrutura microscópica efetiva</strong> à relação $p$–$V$–$T$.</p>
-<p>O passo seguinte é <strong>cinético</strong>: sai-se do gás ideal descrito implicitamente pela estatística de Maxwell–Boltzmann e entra-se na <strong>equação de Boltzmann</strong>,
-$$
-\frac{\partial f}{\partial t} + \mathbf{v}\cdot\nabla_{\mathbf{x}} f + \mathbf{F}\cdot\nabla_{\mathbf{v}} f = \left(\frac{\partial f}{\partial t}\right)_{\text{col}},
-$$
-onde o termo de colisão codifica <strong>interações reais</strong> entre partículas. No limite hidrodinâmico (expansão de Chapman–Enskog), a equação de Boltzmann <strong>reduz exatamente às equações de Navier–Stokes</strong>, com viscosidade e condutividade térmica emergindo microscopicamente. Ou seja:</p>
-<blockquote>
-<p><strong>Boltzmann → Navier–Stokes</strong> é o análogo conceitual de<br/>
-<strong>gás real → fluido viscoso</strong>.</p>
-</blockquote>
-<p>Por fim, em regimes mais densos ou fortemente correlacionados, o análogo “ainda além” de Navier–Stokes é incluir <strong>efeitos não ideais adicionais</strong>, como:</p>
-<ul>
-<li><strong>Equações de estado não ideais</strong> (virial, Redlich–Kwong, Peng–Robinson);</li>
-<li><strong>Hidrodinâmica com transporte estendido</strong> (Burnett, super-Burnett);</li>
-<li><strong>Fluidos quânticos</strong> (estatística de Fermi–Dirac/Bose–Einstein);</li>
-<li><strong>Teoria de campos efetiva hidrodinâmica</strong>, quando correlações de longo alcance dominam.</li>
-</ul>
-<p><strong>Resumo em uma linha:</strong></p>
-<blockquote>
-<p><em>Gás ideal</em> está para <em>Van der Waals / Boltzmann</em> assim como<br/>
-<em>Euler</em> está para <em>Navier–Stokes</em> — o acréscimo sistemático de <strong>interações e dissipação</strong>.</p>
-</blockquote>
+<h3 id="Hadrons-de-alto-momento">Hadrons de alto momento<a class="anchor-link" href="#Hadrons-de-alto-momento">¶</a></h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=51048ed9"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=ece65392"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
@@ -13346,32 +13286,11 @@ onde o termo de colisão codifica <strong>interações reais</strong> entre part
   color: #2c2c2c;
 ">
 </div>
-<h3 id="Fluido-ideal">Fluido ideal<a class="anchor-link" href="#Fluido-ideal">¶</a></h3><p>Um <strong>líquido ideal (fluido perfeito)</strong>, no sentido clássico da mecânica dos fluidos, é um fluido <strong>sem viscosidade</strong> (inviscido) e tipicamente tratado como <strong>incompressível</strong>; sua dinâmica é governada pelas <strong>equações de Euler</strong>. Para o caso <strong>incompressível, 2D e estacionário</strong>, uma forma padrão é:
-$$
-\nabla\cdot \mathbf{u} = 0,
-$$
-$$
-(\mathbf{u}\cdot\nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \mathbf{f},
-$$
-com $\mathbf{u}(x,y)=(u,v)$ o campo de velocidades, $p$ a pressão, $\rho$ a densidade (constante) e $\mathbf{f}$ forças de corpo (por exemplo, gravidade).  <a href="https://www.grc.nasa.gov/www/k-12/airplane/eulereqs.html?utm_source">grc.nasa.gov</a></p>
-<p><strong>Imagens ilustrativas (ideal/inviscido vs escoamento real/viscoso):</strong></p>
-<ul>
-<li>Inviscid/potential flow ao redor de um cilindro (streamlines):<br/>
-<img alt="Inviscid flow around a cylinder (GIF)" src="https://commons.wikimedia.org/wiki/Special:FilePath/Inviscid_flow_around_a_cylinder.gif"/> <a href="https://pt.wikipedia.org/wiki/Ficheiro%3AInviscid_flow_around_a_cylinder.gif">Wikipedia</a></li>
-<li>Exemplo de simulação CFD (Navier–Stokes) em cavidade com tampa (mostra recirculações por viscosidade):<br/>
-<img alt="Lid-driven cavity (Navier–Stokes, GIF)" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lid-driven_cavity_using_Navier-Stokes_CFD_simulation_in_2D.gif"/> <a href="https://commons.wikimedia.org/wiki/File%3ALid-driven_cavity_using_Navier-Stokes_CFD_simulation_in_2D.gif">Wikimedia</a></li>
-</ul>
-<hr/>
-<h3 id="De-Euler-para-Navier%E2%80%93Stokes:-o-que-entra-(os-%E2%80%9Ccomponentes%E2%80%9D-que-mudam-tudo)">De Euler para Navier–Stokes: o que entra (os “componentes” que mudam tudo)<a class="anchor-link" href="#De-Euler-para-Navier%E2%80%93Stokes:-o-que-entra-(os-%E2%80%9Ccomponentes%E2%80%9D-que-mudam-tudo)">¶</a></h3><p>As <strong>equações de Navier–Stokes</strong> são a generalização viscosa: elas mantêm a conservação de massa e o balanço de momento, mas <strong>incluem tensões viscosas</strong> (atrito interno), que aparecem como um termo difusivo de momento. Para um fluido <strong>newtoniano incompressível</strong> (com $\nabla\cdot\mathbf{u}=0$) e viscosidade uniforme, a equação de momento pode ser escrita como:
-$$
-\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u}
-= -\frac{1}{\rho}\nabla p + \nu \nabla^2\mathbf{u} + \mathbf{f},
-$$
-onde <strong>$\nu=\mu/\rho$</strong> é a viscosidade cinemática (e $\mu$ a viscosidade dinâmica). O “salto” Euler $\rightarrow$ Navier–Stokes é justamente o acréscimo do termo viscoso (equivalentemente, a divergência do tensor de tensões viscosas), que traz <strong>dissipação</strong>, <strong>camada-limite</strong> e <strong>condição de não-deslizamento</strong> na parede (no-slip), fenômenos ausentes no modelo inviscido de Euler.  <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Wikipedia</a></p>
+<h3 id="Regime-perturbativo">Regime perturbativo<a class="anchor-link" href="#Regime-perturbativo">¶</a></h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=4761bfa3"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=2928e75b"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
@@ -13382,504 +13301,97 @@ onde <strong>$\nu=\mu/\rho$</strong> é a viscosidade cinemática (e $\mu$ a vis
   color: #2c2c2c;
 ">
 </div>
-<h3 id="Transi%C3%A7%C3%A3o-de-Euler-%E2%86%92-Navier%E2%80%93Stokes-(termos-novos-em-destaque)">Transição de Euler → Navier–Stokes (termos novos em destaque)<a class="anchor-link" href="#Transi%C3%A7%C3%A3o-de-Euler-%E2%86%92-Navier%E2%80%93Stokes-(termos-novos-em-destaque)">¶</a></h3><p>Começamos pelas <strong>equações de Euler incompressíveis</strong> (fluido ideal, sem dissipação):</p>
-<p>$$
-\nabla \cdot \mathbf{u} = 0,
-$$</p>
-<p>$$
-(\mathbf{u}\cdot\nabla)\mathbf{u}
-= -\frac{1}{\rho}\nabla p + \mathbf{f}.
-$$</p>
-<p>Essas equações descrevem a conservação de massa e o balanço de momento <strong>sem viscosidade</strong> e <strong>sem evolução temporal explícita</strong> (caso estacionário).</p>
-<hr/>
-<p>Ao permitir <strong>viscosidade</strong> e <strong>dependência temporal</strong>, obtemos as <strong>equações de Navier–Stokes incompressíveis</strong>:</p>
-<p>$$
-\nabla \cdot \mathbf{u} = 0,
-$$</p>
-<p>$$
-\textcolor{#f1c40f}{\frac{\partial \mathbf{u}}{\partial t}}
-+ (\mathbf{u}\cdot\nabla)\mathbf{u}
-=
--\frac{1}{\rho}\nabla p
-+
-\textcolor{#f1c40f}{\nu \nabla^2 \mathbf{u}}
-+
-\mathbf{f}
-$$</p>
-<hr/>
-<h3 id="Interpreta%C3%A7%C3%A3o-f%C3%ADsica-dos-termos-novos-(em-amarelo)">Interpretação física dos termos novos (em amarelo)<a class="anchor-link" href="#Interpreta%C3%A7%C3%A3o-f%C3%ADsica-dos-termos-novos-(em-amarelo)">¶</a></h3><ul>
-<li><p><strong>$\color{#f1c40f}{\partial \mathbf{u}/\partial t}$</strong><br/>
-Introduz a <strong>dinâmica temporal</strong> do fluido (escoamentos não estacionários).</p>
-</li>
-<li><p><strong>$\color{#f1c40f}{\nu \nabla^2 \mathbf{u}}$</strong><br/>
-Termo <strong>viscoso</strong>, responsável por:</p>
-<ul>
-<li>dissipação de energia,</li>
-<li>difusão de momento,</li>
-<li>formação de camadas-limite,</li>
-<li>condição de não-deslizamento nas paredes.</li>
-</ul>
-</li>
-</ul>
-<hr/>
-<h3 id="Leitura-conceitual-da-transi%C3%A7%C3%A3o">Leitura conceitual da transição<a class="anchor-link" href="#Leitura-conceitual-da-transi%C3%A7%C3%A3o">¶</a></h3><blockquote>
-<p><strong>Euler → Navier–Stokes</strong><br/>
-é a passagem de um fluido <strong>ideal e reversível</strong><br/>
-para um fluido <strong>real, dissipativo e irreversível</strong>.</p>
-</blockquote>
-<p>Em termos estruturais:</p>
-<ul>
-<li>Euler ignora o transporte microscópico de momento;</li>
-<li>Navier–Stokes o incorpora via um operador difusivo ($\nabla^2$).</li>
-</ul>
-<hr/>
-<p><em>(Observação: no limite $\nu \to 0$ e $\partial_t \mathbf{u} \to 0$, recupera-se formalmente o sistema de Euler.)</em></p>
+<h3 id="Regime-nao-perturbativo">Regime nao perturbativo<a class="anchor-link" href="#Regime-nao-perturbativo">¶</a></h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=e7350c35"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=0a7850e9"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
-<div style="
-  font-family: 'Sevillana', cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #2c2c2c;
-">
-</div>
-<h2 id="O-teorema-de-Liouville">O teorema de Liouville<a class="anchor-link" href="#O-teorema-de-Liouville">¶</a></h2><p>Antes de qualquer estatística, termodinâmica ou hipótese probabilística, partimos da <strong>mecânica clássica determinística</strong>.<br/>
-Mais precisamente, partimos da <strong>formulação hamiltoniana</strong> da dinâmica.</p>
-<p>Para um sistema clássico descrito por coordenadas generalizadas $ q_i $ e momentos conjugados $ p_i $, a evolução temporal é dada pelas <strong>equações de Hamilton</strong>:</p>
-<p>$$
-\dot q_i = \frac{\partial H}{\partial p_i},
-\qquad
-\dot p_i = -\frac{\partial H}{\partial q_i},
-$$</p>
-<p>onde $ H(q,p) $ é o Hamiltoniano do sistema.<br/>
-Até aqui, estamos descrevendo <strong>trajetórias individuais</strong> no espaço de fase.</p>
-<hr/>
-<h2 id="Do-ponto-de-vista-de-trajet%C3%B3rias-para-densidades">Do ponto de vista de trajetórias para densidades<a class="anchor-link" href="#Do-ponto-de-vista-de-trajet%C3%B3rias-para-densidades">¶</a></h2><p>Em vez de acompanhar uma única trajetória $(q(t),p(t))$, passamos a considerar um <strong>conjunto de sistemas possíveis</strong>, descritos por uma <strong>densidade no espaço de fase</strong>:</p>
-<p>$$
-\rho(q,p,t)
-$$</p>
-<p>A interpretação é direta:<br/>
-$$
-\rho(q,p,t)\,dq\,dp
-$$
-representa a fração (ou número) de sistemas cujos estados estão em torno de $(q,p)$ no instante $t$.</p>
-<p>Esse passo <strong>não introduz estatística física nova</strong> — apenas muda a descrição:</p>
-<ul>
-<li>de trajetórias → para densidades</li>
-<li>de pontos → para campos no espaço de fase</li>
-</ul>
-<hr/>
-<h2 id="Conserva%C3%A7%C3%A3o-no-espa%C3%A7o-de-fase">Conservação no espaço de fase<a class="anchor-link" href="#Conserva%C3%A7%C3%A3o-no-espa%C3%A7o-de-fase">¶</a></h2><p>A evolução hamiltoniana define um <strong>campo de velocidades no espaço de fase</strong>:</p>
-<p>$$
-\dot \Gamma = (\dot q, \dot p)
-=
-\left(
-\frac{\partial H}{\partial p},
--\frac{\partial H}{\partial q}
-\right),
-$$</p>
-<p>onde $\Gamma = (q,p)$.</p>
-<p>Como qualquer densidade conservada, $\rho$ deve obedecer a uma <strong>equação de continuidade</strong> no espaço de fase:</p>
-<p>$$
-\frac{\partial \rho}{\partial t}
-+
-\nabla_{(q,p)} \cdot \bigl(\rho\,\dot \Gamma\bigr)
-= 0.
-$$</p>
-<p>Esse é apenas um enunciado de conservação:<br/>
-nenhum sistema é criado ou destruído no espaço de fase.</p>
-<hr/>
-<h2 id="A-propriedade-crucial-(Teorema-de-Liouville)">A propriedade crucial (Teorema de Liouville)<a class="anchor-link" href="#A-propriedade-crucial-(Teorema-de-Liouville)">¶</a></h2><p>Para sistemas hamiltonianos, ocorre um fato fundamental:</p>
-<p>$$
-\nabla_{(q,p)} \cdot \dot \Gamma = 0.
-$$</p>
-<p>Ou seja:</p>
-<blockquote>
-<p><strong>o fluxo hamiltoniano no espaço de fase é incompressível</strong>.</p>
-</blockquote>
-<p>Isso implica que o volume ocupado por um conjunto de estados no espaço de fase é <strong>preservado no tempo</strong>.</p>
-<hr/>
-<h2 id="Forma-can%C3%B4nica:-o-colchete-de-Poisson">Forma canônica: o colchete de Poisson<a class="anchor-link" href="#Forma-can%C3%B4nica:-o-colchete-de-Poisson">¶</a></h2><p>Usando essa propriedade, a equação de continuidade se reduz a:</p>
-<p>$$
-\frac{\partial \rho}{\partial t}
-+
-\{\rho, H\}
-= 0,
-$$</p>
-<p>onde o <strong>colchete de Poisson</strong> é definido por:</p>
-<p>$$
-\{A,B\}
-=
-\sum_i
-\left(
-\frac{\partial A}{\partial q_i}\frac{\partial B}{\partial p_i}
--
-\frac{\partial A}{\partial p_i}\frac{\partial B}{\partial q_i}
-\right).
-$$</p>
-<hr/>
-<p>👉 <strong>Isso é a equação de Liouville.</strong></p>
-<p>Ela descreve a evolução <strong>exata e reversível</strong> de uma densidade no espaço de fase sob dinâmica hamiltoniana.</p>
-<hr/>
-<h2 id="Observa%C3%A7%C3%B5es-conceituais-importantes">Observações conceituais importantes<a class="anchor-link" href="#Observa%C3%A7%C3%B5es-conceituais-importantes">¶</a></h2><ul>
-<li>A equação de Liouville:<ul>
-<li>não envolve colisões,</li>
-<li>não envolve irreversibilidade,</li>
-<li>não envolve entropia crescente.</li>
-</ul>
-</li>
-<li>Ela é <strong>totalmente equivalente</strong> à mecânica clássica determinística.</li>
-<li>A aparente “estatística” está apenas na <strong>linguagem de densidades</strong>, não na dinâmica.</li>
-</ul>
-<blockquote>
-<p>A irreversibilidade <strong>não nasce em Liouville</strong> —<br/>
-ela só aparece quando reduzimos essa descrição (Boltzmann, coarse-graining).</p>
-</blockquote>
-<hr/>
-<p><em>(A partir daqui, o próximo passo natural é a redução da dinâmica de $N$ partículas para funções de distribuição de uma partícula — a hierarquia BBGKY — que conduz à equação de Boltzmann.)</em></p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=5ee21e9b"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered" id="cell-id=3680af5c"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
-<div style="
-  font-family: 'Sevillana', cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #2c2c2c;
-">
-</div>
-<h2 id="De-Liouville-a-Boltzmann:-onde-nasce-a-irreversibilidade">De Liouville a Boltzmann: onde nasce a irreversibilidade<a class="anchor-link" href="#De-Liouville-a-Boltzmann:-onde-nasce-a-irreversibilidade">¶</a></h2><p>A equação de Liouville descreve a evolução <strong>exata</strong> da densidade de probabilidade
-no espaço de fase completo de um sistema clássico com $N$ partículas:</p>
-<p>$$
-\frac{\partial \rho_N}{\partial t} + \{\rho_N, H_N\} = 0,
-$$</p>
-<p>onde:</p>
-<ul>
-<li>$\rho_N = \rho_N(\Gamma_1,\dots,\Gamma_N,t)$,</li>
-<li>$\Gamma_i = (\mathbf{x}_i,\mathbf{p}_i)$,</li>
-<li>$H_N$ é o Hamiltoniano total,</li>
-<li>$\{\cdot,\cdot\}$ é o colchete de Poisson.</li>
-</ul>
-<p>Essa equação é:</p>
-<ul>
-<li>determinística,</li>
-<li>reversível no tempo,</li>
-<li>definida em $6N$ dimensões.</li>
-</ul>
-<p>Até aqui, <strong>não há dissipação nem crescimento de entropia</strong>.</p>
-<hr/>
-<h2 id="O-problema-f%C3%ADsico:-excesso-de-informa%C3%A7%C3%A3o">O problema físico: excesso de informação<a class="anchor-link" href="#O-problema-f%C3%ADsico:-excesso-de-informa%C3%A7%C3%A3o">¶</a></h2><p>A descrição por $\rho_N$ é <strong>impraticável</strong> para sistemas macroscópicos:</p>
-<ul>
-<li>$N \sim 10^{23}$,</li>
-<li>informação microscópica inacessível,</li>
-<li>interesse apenas em observáveis de poucas partículas.</li>
-</ul>
-<p>A solução conceitual é <strong>reduzir a descrição</strong>, integrando graus de liberdade.</p>
-<hr/>
-<h2 id="Fun%C3%A7%C3%B5es-distribui%C3%A7%C3%A3o-reduzidas">Funções distribuição reduzidas<a class="anchor-link" href="#Fun%C3%A7%C3%B5es-distribui%C3%A7%C3%A3o-reduzidas">¶</a></h2><p>Define-se a função distribuição de uma partícula como:</p>
-<p>$$
-f_1(\Gamma_1,t)
-=
-\int \rho_N(\Gamma_1,\Gamma_2,\dots,\Gamma_N,t)
-\, d\Gamma_2 \cdots d\Gamma_N.
-$$</p>
-<p>Analogamente, define-se a distribuição de duas partículas:</p>
-<p>$$
-f_2(\Gamma_1,\Gamma_2,t)
-=
-\int \rho_N \, d\Gamma_3 \cdots d\Gamma_N.
-$$</p>
-<p>Essas reduções <strong>não são aproximações</strong> — são integrações exatas.</p>
-<hr/>
-<h2 id="A-hierarquia-BBGKY">A hierarquia BBGKY<a class="anchor-link" href="#A-hierarquia-BBGKY">¶</a></h2><p>Ao integrar a equação de Liouville, obtém-se uma <strong>cadeia de equações acopladas</strong>:</p>
-<ul>
-<li>a equação para $f_1$ depende de $f_2$,</li>
-<li>a equação para $f_2$ depende de $f_3$,</li>
-<li>...</li>
-<li>até $f_N = \rho_N$.</li>
-</ul>
-<p>Essa cadeia é chamada de <strong>hierarquia BBGKY</strong>
-(Bogoliubov–Born–Green–Kirkwood–Yvon).</p>
-<p>Esquematicamente:</p>
-<p>$$
-f_1 \;\leftarrow\; f_2 \;\leftarrow\; f_3 \;\leftarrow\; \cdots \;\leftarrow\; f_N
-$$</p>
-<p>Até aqui:</p>
-<ul>
-<li>a teoria ainda é <strong>exata</strong>,</li>
-<li>ainda é <strong>reversível</strong>,</li>
-<li>ainda <strong>não há irreversibilidade</strong>.</li>
-</ul>
-<hr/>
-<h2 id="O-ponto-de-ruptura:-fechamento-da-hierarquia">O ponto de ruptura: fechamento da hierarquia<a class="anchor-link" href="#O-ponto-de-ruptura:-fechamento-da-hierarquia">¶</a></h2><p>Para obter uma equação fechada para $f_1$, é necessário <strong>quebrar a cadeia</strong>.</p>
-<p>Isso é feito com a <strong>hipótese do caos molecular</strong>
-(<em>Stosszahlansatz</em>):</p>
-<p>$$
-f_2(\Gamma_1,\Gamma_2,t)
-\;\approx\;
-f_1(\Gamma_1,t)\,f_1(\Gamma_2,t)
-$$</p>
-<p>Essa hipótese afirma que:</p>
-<ul>
-<li>correlações antes das colisões são desprezáveis,</li>
-<li>o sistema foi <em>coarse-grained</em>,</li>
-<li>informação microscópica é descartada.</li>
-</ul>
-<p>👉 <strong>Aqui nasce a irreversibilidade.</strong></p>
-<hr/>
-<h2 id="A-equa%C3%A7%C3%A3o-de-Boltzmann">A equação de Boltzmann<a class="anchor-link" href="#A-equa%C3%A7%C3%A3o-de-Boltzmann">¶</a></h2><p>Com esse fechamento, obtém-se a <strong>equação de Boltzmann</strong>:</p>
-<p>$$
-\frac{\partial f}{\partial t}
-+ \mathbf{v}\cdot\nabla_{\mathbf{x}} f
-+ \mathbf{F}\cdot\nabla_{\mathbf{v}} f
-=
-\textcolor{#f1c40f}{\left(\frac{\partial f}{\partial t}\right)_{\text{col}}}
-$$</p>
-<p>O significado estrutural é claro:</p>
-<ul>
-<li>lado esquerdo: transporte determinístico (Liouville reduzido),</li>
-<li>lado direito: efeito estatístico das colisões.</li>
-</ul>
-<p>A equação de Boltzmann:</p>
-<ul>
-<li><strong>não é reversível</strong>,</li>
-<li>admite crescimento de entropia,</li>
-<li>conduz ao equilíbrio termodinâmico.</li>
-</ul>
-<hr/>
-<h2 id="Leitura-conceitual-da-cadeia">Leitura conceitual da cadeia<a class="anchor-link" href="#Leitura-conceitual-da-cadeia">¶</a></h2><blockquote>
-<p><strong>Liouville</strong> conserva informação total.<br/>
-<strong>BBGKY</strong> redistribui essa informação entre níveis.<br/>
-<strong>Boltzmann</strong> descarta correlações microscópicas.</p>
-</blockquote>
-<p>Ou, em uma linha:</p>
-<blockquote>
-<p><strong>Boltzmann = Liouville + redução + esquecimento controlado</strong></p>
-</blockquote>
-<hr/>
-<h2 id="Conex%C3%A3o-com-hidrodin%C3%A2mica">Conexão com hidrodinâmica<a class="anchor-link" href="#Conex%C3%A3o-com-hidrodin%C3%A2mica">¶</a></h2><p>No limite hidrodinâmico (Chapman–Enskog):</p>
-<ul>
-<li>Boltzmann → Navier–Stokes,</li>
-<li>viscosidade e dissipação emergem microscopicamente.</li>
-</ul>
-<p>Assim como:</p>
-<ul>
-<li>Euler → Navier–Stokes adiciona dissipação,</li>
-<li>Liouville → Boltzmann adiciona irreversibilidade estatística.</li>
-</ul>
-<hr/>
-<p><em>(O próximo passo natural é comparar a entropia de Gibbs, conservada por Liouville, com a entropia de Boltzmann, que cresce no tempo.)</em></p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=84b13573"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
-<div style="
-  font-family: 'Sevillana', cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #2c2c2c;
-">
-</div>
-<h2 id="Evid%C3%AAncias-estruturais-da-transi%C3%A7%C3%A3o-Liouville-%E2%86%92-(redu%C3%A7%C3%A3o)-%E2%86%92-Boltzmann">Evidências estruturais da transição Liouville → (redução) → Boltzmann<a class="anchor-link" href="#Evid%C3%AAncias-estruturais-da-transi%C3%A7%C3%A3o-Liouville-%E2%86%92-(redu%C3%A7%C3%A3o)-%E2%86%92-Boltzmann">¶</a></h2><p>Você está certa: existe um caminho longo (Liouville → BBGKY → fechamento → Boltzmann).<br/>
-Mas dá para ver a transição de forma <strong>muito concreta</strong> por evidências estruturais que “carimbam” o que é Liouville e o que é novo.</p>
-<hr/>
-<h3 id="1)-Evid%C3%AAncia-1:-se-eu-desligo-colis%C3%B5es,-eu-volto-para-Liouville-(streaming-term)">1) Evidência 1: se eu desligo colisões, eu volto para Liouville (streaming term)<a class="anchor-link" href="#1)-Evid%C3%AAncia-1:-se-eu-desligo-colis%C3%B5es,-eu-volto-para-Liouville-(streaming-term)">¶</a></h3><p>A equação de Boltzmann é:</p>
-<p>$$
-\frac{\partial f}{\partial t}
-+ \mathbf{v}\cdot\nabla_{\mathbf{x}} f
-+ \mathbf{F}\cdot\nabla_{\mathbf{v}} f
-=
-\left(\frac{\partial f}{\partial t}\right)_{\text{col}}.
-$$</p>
-<p>Se eu “desligo” colisões:</p>
-<p>$$
-\left(\frac{\partial f}{\partial t}\right)_{\text{col}} = 0,
-$$</p>
-<p>eu obtenho:</p>
-<p>$$
-\frac{\partial f}{\partial t}
-+ \mathbf{v}\cdot\nabla_{\mathbf{x}} f
-+ \mathbf{F}\cdot\nabla_{\mathbf{v}} f
-= 0,
-$$</p>
-<p>que é exatamente a <strong>equação de Liouville (reduzida para 1 partícula)</strong>:<br/>
-um enunciado de <strong>conservação por transporte no espaço de fase</strong> (6D).</p>
-<blockquote>
-<p>Ou seja: o lado esquerdo da Boltzmann é literalmente “Liouville para $f$”.</p>
-</blockquote>
-<hr/>
-<h3 id="2)-Evid%C3%AAncia-2:-o-termo-de-colis%C3%A3o-%C3%A9-constru%C3%ADdo-para-respeitar-invariantes-microsc%C3%B3picos">2) Evidência 2: o termo de colisão é construído para respeitar invariantes microscópicos<a class="anchor-link" href="#2)-Evid%C3%AAncia-2:-o-termo-de-colis%C3%A3o-%C3%A9-constru%C3%ADdo-para-respeitar-invariantes-microsc%C3%B3picos">¶</a></h3><p>O termo de colisão não pode ser qualquer coisa. Ele é obrigado a respeitar o fato de que colisões microscópicas (binárias, elásticas) conservam:</p>
-<ul>
-<li>número de partículas,</li>
-<li>momento linear,</li>
-<li>energia.</li>
-</ul>
-<p>Isso se traduz em três identidades (os chamados <em>colisional invariants</em>):</p>
-<p>$$
-\int \left(\frac{\partial f}{\partial t}\right)_{\text{col}}\, d^3v = 0,
-$$</p>
-<p>$$
-\int m\mathbf{v}\,\left(\frac{\partial f}{\partial t}\right)_{\text{col}}\, d^3v = 0,
-$$</p>
-<p>$$
-\int \frac{1}{2}m v^2\,\left(\frac{\partial f}{\partial t}\right)_{\text{col}}\, d^3v = 0.
-$$</p>
-<p>Essas equações são uma evidência forte de que o termo de colisão:</p>
-<ul>
-<li>não é um “termo arbitrário”,</li>
-<li>é um operador com simetrias e conservações herdadas da microdinâmica.</li>
-</ul>
-<blockquote>
-<p>Isso é exatamente o tipo de “restrição estrutural” que aparece quando você reduz Liouville com hipóteses físicas.</p>
-</blockquote>
-<hr/>
-<h3 id="3)-Evid%C3%AAncia-3:-o-termo-de-colis%C3%A3o-produz-a-seta-do-tempo-(H-teorema)">3) Evidência 3: o termo de colisão produz a seta do tempo (H-teorema)<a class="anchor-link" href="#3)-Evid%C3%AAncia-3:-o-termo-de-colis%C3%A3o-produz-a-seta-do-tempo-(H-teorema)">¶</a></h3><p>Com Liouville, a entropia de Gibbs é conservada (reversibilidade).<br/>
-Com Boltzmann, existe o H-teorema, que essencialmente diz:</p>
-<p>$$
-\frac{d}{dt}\left[
-- \int f\ln f\, d^3x\,d^3v
-\right] \ge 0.
-$$</p>
-<p>O ponto-chave é:</p>
-<ul>
-<li>o lado esquerdo (Liouville/streaming) <strong>não produz</strong> crescimento de entropia,</li>
-<li>o lado direito (colisões + hipótese estatística) é o que <strong>quebra</strong> a reversibilidade.</li>
-</ul>
-<blockquote>
-<p>Ou seja: a irreversibilidade não está “na mecânica”, mas no fechamento estatístico que cria o termo de colisão.</p>
-</blockquote>
-<hr/>
-<h2 id="Conclus%C3%A3o-visual-(no-mesmo-esp%C3%ADrito-Euler-%E2%86%92-Navier%E2%80%93Stokes)">Conclusão visual (no mesmo espírito Euler → Navier–Stokes)<a class="anchor-link" href="#Conclus%C3%A3o-visual-(no-mesmo-esp%C3%ADrito-Euler-%E2%86%92-Navier%E2%80%93Stokes)">¶</a></h2><ul>
-<li><p><strong>Liouville (exato, $6N$D):</strong>
-$$
-\frac{\partial \rho_N}{\partial t} + \{\rho_N,H_N\} = 0
-$$</p>
-</li>
-<li><p><strong>Boltzmann (reduzido, 6D):</strong>
-$$
-\frac{\partial f}{\partial t}</p>
-</li>
-</ul>
-<ul>
-<li>\mathbf{v}\cdot\nabla_{\mathbf{x}} f</li>
-<li><h1 id="%5Cmathbf%7BF%7D%5Ccdot%5Cnabla_%7B%5Cmathbf%7Bv%7D%7D-f">\mathbf{F}\cdot\nabla_{\mathbf{v}} f<a class="anchor-link" href="#%5Cmathbf%7BF%7D%5Ccdot%5Cnabla_%7B%5Cmathbf%7Bv%7D%7D-f">¶</a></h1>\textcolor{#f1c40f}{\left(\frac{\partial f}{\partial t}\right)_{\text{col}}}
-$$</li>
-</ul>
-<p>A evidência de transição é que:</p>
-<ol>
-<li>sem o termo amarelo, Boltzmann vira Liouville reduzido;</li>
-<li>o termo amarelo é rigidamente constrangido por conservações microscópicas;</li>
-<li>o termo amarelo é onde nasce a seta do tempo (H-teorema).</li>
-</ol>
-<hr/>
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=70578430">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="n">css</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../../assets/teste.css"</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">css</span><span class="p">)</span>
+<span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">"&lt;style&gt;</span><span class="si">{</span><span class="n">css</span><span class="si">}</span><span class="s2">&lt;/style&gt;"</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=2e7955e6"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<link href="https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap" rel="stylesheet"/>
-<div style="
-  font-family: 'Sevillana', cursive;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #2c2c2c;
-">
-</div>
-<h2 id="Mini-deriva%C3%A7%C3%A3o-BBGKY-em-~10-linhas">Mini-derivação BBGKY em ~10 linhas<a class="anchor-link" href="#Mini-deriva%C3%A7%C3%A3o-BBGKY-em-~10-linhas">¶</a></h2><p><strong>(1)</strong> Considere $N$ partículas clássicas com estados $\Gamma_i=(\mathbf{x}_i,\mathbf{v}_i)$ e densidade completa<br/>
-$$
-\rho_N(\Gamma_1,\dots,\Gamma_N,t).
-$$</p>
-<p><strong>(2)</strong> A dinâmica exata satisfaz a <strong>equação de Liouville</strong>:
-$$
-\partial_t \rho_N + \sum_{i=1}^N \mathbf{v}_i\!\cdot\!\nabla_{\mathbf{x}_i}\rho_N
-+ \sum_{i=1}^N \frac{\mathbf{F}_i}{m}\!\cdot\!\nabla_{\mathbf{v}_i}\rho_N = 0,
-$$
-onde $\mathbf{F}_i=\sum_{j\neq i}\mathbf{F}_{ij}$ é a força total sobre $i$ (interações de pares).</p>
-<p><strong>(3)</strong> Defina a distribuição de 1 partícula (reduzida):
-$$
-f_1(\Gamma_1,t)=N\!\int \rho_N(\Gamma_1,\dots,\Gamma_N,t)\, d\Gamma_2\cdots d\Gamma_N.
-$$</p>
-<p><strong>(4)</strong> Integre a equação de Liouville em $d\Gamma_2\cdots d\Gamma_N$. Os termos com derivadas em $\mathbf{x}_i,\mathbf{v}_i$ para $i\ge2$ viram termos de contorno e somem (assumindo decaimento/condições apropriadas).</p>
-<p><strong>(5)</strong> O que sobra dá, para $f_1$, um termo de transporte + um termo de interação:
-$$
-\partial_t f_1 + \mathbf{v}_1\!\cdot\!\nabla_{\mathbf{x}_1} f_1
-+ \frac{\mathbf{F}_{\text{ext}}(\mathbf{x}_1)}{m}\!\cdot\!\nabla_{\mathbf{v}_1} f_1
-= - \int \frac{\mathbf{F}_{12}}{m}\!\cdot\!\nabla_{\mathbf{v}_1}\, f_2(\Gamma_1,\Gamma_2,t)\, d\Gamma_2.
-$$</p>
-<p><strong>(6)</strong> Aqui aparece a distribuição de 2 partículas:
-$$
-f_2(\Gamma_1,\Gamma_2,t)=N(N-1)\!\int \rho_N\, d\Gamma_3\cdots d\Gamma_N.
-$$</p>
-<p><strong>(7)</strong> Ou seja: a equação para $f_1$ <strong>não fecha</strong> — ela depende de $f_2$.<br/>
-Isso já é o “DNA” BBGKY:<br/>
-$$
-f_1 \leftarrow f_2 \leftarrow f_3 \leftarrow \cdots
-$$</p>
-<p><strong>(8)</strong> Repetindo o procedimento para $f_2$, você obtém:
-$$
-\partial_t f_2 + (\text{termos de transporte em }1,2) = \int (\text{forças})\, f_3\, d\Gamma_3,
-$$
-isto é: $f_2$ depende de $f_3$, etc.</p>
-<p><strong>(9)</strong> <strong>Fechamento (hipótese do caos molecular):</strong>
-$$
-f_2(\Gamma_1,\Gamma_2,t)\approx f_1(\Gamma_1,t)\,f_1(\Gamma_2,t)
-\quad (\text{antes da colisão}).
-$$</p>
-<p><strong>(10)</strong> Substituindo esse fechamento na eq. de $f_1$, o termo de interação vira um operador efetivo que é justamente o <strong>termo de colisão</strong>:
-$$
-\partial_t f + \mathbf{v}\!\cdot\!\nabla_{\mathbf{x}} f + \frac{\mathbf{F}_{\text{ext}}}{m}\!\cdot\!\nabla_{\mathbf{v}} f
-=
-\left(\frac{\partial f}{\partial t}\right)_{\text{col}}.
-$$</p>
-<blockquote>
-<p>Moral em uma frase: <strong>Liouville (exato) → integração reduzida dá $BBGKY$ → fechamento $f_2\simeq f_1f_1$ cria o termo de colisão de Boltzmann.</strong></p>
-</blockquote>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered celltag_hide-input" id="cell-id=4c350e78">
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[1]:</div>
-<div class="output_html rendered_html output_subarea output_execute_result"><style>@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/* carregar fontes UMA vez */
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap");
 
-:root{
-  --nb-font: "Sevillana", cursive;
-}
+/* ===== classes de fonte ===== */
 
-/* Markdown renderizado */
-.rendered_html {
-  font-family: 'Sevillana', cursive !important;
-  font-size: 22px;
-  line-height: 1.6;
+.font-sevillana{
+  font-family: "Sevillana", cursive;
+  font-size: 20px;
+  line-height: 1.5;
   color: #2c2c2c;
 }
 
-/* Parágrafos e listas */
-.rendered_html p,
-.rendered_html li {
-  font-family: 'Sevillana', cursive !important;
+.font-inter{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #222;
+}
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+<div class="output_html rendered_html output_subarea output_execute_result"><style>/* carregar fontes UMA vez */
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+/* ===== classes de fonte ===== */
+
+.font-sevillana{
+  font-family: "Sevillana", cursive;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+.font-inter{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #222;
 }</style></div>
 </div>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered" id="cell-id=47b1f302"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<div class="cell border-box-sizing code_cell rendered" id="cell-id=25a7ab13">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
