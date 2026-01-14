@@ -17,3 +17,16 @@
   line-height: 1.55;
   color: #222;
 }
+
+.font-sevillana,
+.font-sevillana p,
+.font-sevillana li { 
+  font-family: "Sevillana", cursive !important;
+}
+
+.font-sevillana h1,
+.font-sevillana h2,
+.font-sevillana h3,
+.font-sevillana h4 {
+  font-family: "Sevillana", cursive !important;
+}
