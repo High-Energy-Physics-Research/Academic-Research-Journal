@@ -34,7 +34,7 @@
 }
 \usepackage[default]{opensans}  % Define Open Sans como fonte secundária
 \input{config/code_langs}       % Importa configurações para highlight de código
-
+%----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 % CONFIGURAÇÃO DO TEMA
 %----------------------------------------------------------------------------------------
@@ -80,6 +80,33 @@
 \hypersetup{
   hidelinks,
   urlcolor=blue
+}
+
+\usepackage{pifont}
+\usepackage{xcolor}
+
+\newcommand{\done}{\textcolor{green}{\ding{51}}}      % ✔ concluído
+% \newcommand{\pending}{\textcolor{orange}{\ding{108}}} % ○ pendente
+\newcommand{\blocked}{\textcolor{red}{\ding{55}}}    % ✘ bloqueado
+% \newcommand{\inprogress}{\textcolor{blue!70!black}{\ding{115}}} % ◐ iniciado
+
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{pifont}
+
+% \newcommand{\done}{\textcolor{green!70!black}{\ding{51}}}
+
+\newcommand{\pending}{%
+  \tikz[baseline=-0.6ex]\draw[gray!70, line width=0.5pt] (0,0) circle (0.7ex);%
+}
+
+\newcommand{\inprogress}{%
+  \tikz[baseline=-0.6ex]{
+    \draw[blue!70!black, line width=0.5pt] (0,0) circle (0.7ex);
+\fill[blue!70!black]
+  (0,0) -- (0,0.7ex)
+  arc (90:-70:0.7ex) -- cycle;
+  }%
 }
 %----------------------------------------------------------------------------------------
 % INFORMAÇÕES DA APRESENTAÇÃO
